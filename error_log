@@ -1,0 +1,2 @@
+[27-Apr-2017 00:34:27 America/New_York] PHP Fatal error:  Call to a member function get_all_pledges() on null in /home/bomiaguh/test.bomiatrading.com/YouthFund/application/views/home/index.php on line 209
+[27-Apr-2017 01:16:09 America/New_York] PHP Parse error:  syntax error, unexpected ':' in /home/bomiaguh/test.bomiatrading.com/YouthFund/application/models/Campaign_model.php on line 78
