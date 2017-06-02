@@ -23,6 +23,14 @@ $this->load->view('shared/header', $data);
         <?= form_input('title', '', array("id" => "title", "required" => "required")) ?>
         <?= form_label('Project Description', 'description') ?>
         <?php echo $this->ckeditor->editor('description',isset($project->Description) ?$project->Description : "");?> <?php echo form_error('description','<p class="error">'); ?>
+        <small>Please think about the following, so that it is clear for others to understand and that they feel motivated to donate and contribute to your project's success: 
+Why are you doing the project? What needs or challenges are you trying to address? Why is it important?
+Who are you and what motivates you? What qualifications or special skills do you have that will convince people that you can do it?
+How are you going to achieve your project goals?
+What exactly do you need that you are asking money for? Be as clear and specific, so people will know what their money will be spent for.
+How will the success of your project change people's lives and/or positively impact your community?
+Please note that these are only some guiding questions. Feel free to add whatever you think is important for you to share about your project.
+</small>
         <!-- <?= form_textarea('description', '', array("id" => "description", "rows" => 2, "cols" => 2)) ?> -->
         <?= form_label('Physical Address', 'address') ?>
         <?= form_textarea('address', '', array("id" => "address", "rows" => "2", "cols" => "2")) ?>

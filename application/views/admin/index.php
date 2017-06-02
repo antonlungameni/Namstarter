@@ -171,7 +171,8 @@ $this->load->view('shared/header', $data);
 	  ?>
 	  <tbody class="list">
 	  <tr>
-          <td class="name"><?=$pledge->Id?>/<?=$p_project->ProjectId?>/<?=$p_campaign->CampaignId?>/<?=$p_funder->Id?></td>
+          <!-- <?=$pledge->Id?>/<?=$p_project->ProjectId?>/<?=$p_campaign->CampaignId?>/<?=$p_funder->Id?> -->
+          <td class="name">S090-7216/<?=$p_project->ProjectId?>/<?=$p_campaign->CampaignId?>/<?=$p_funder->Id?></td>
 	  <td><?=$p_project->Title?></td>
 	  <td><?= $p_user->first_name ?> <?=$p_user->last_name ?></td>
 	  <td>N$ <?= $pledge->Amount ?></td>

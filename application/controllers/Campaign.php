@@ -58,8 +58,8 @@ class Campaign extends CI_Controller {
      */
     function editor($path, $width) {
         //Loading Library For Ckeditor
-        $this->load->library('ckeditor');
-        $this->load->library('ckFinder');
+        $this->load->library('Ckeditor');
+        $this->load->library('Ckfinder');
         //configure base path of ckeditor folder 
         $this->ckeditor->basePath = base_url() . 'js/ckeditor/';
         $this->ckeditor->config['toolbar'] = 'Full';

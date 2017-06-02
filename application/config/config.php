@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 if($_SERVER['SERVER_ADDR'] == 'localhost' || $_SERVER['SERVER_ADDR'] == '::1'){
 $config['base_url'] = 'http://localhost/Namstarter';
-} else {$config['base_url'] = 'http://crowdfunding.rlabsnamibia.org/Namstarter';}
+} else {$config['base_url'] = 'https://crowdfunding.rlabsnamibia.org/Namstarter';}
 //
 
 /*

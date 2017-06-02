@@ -157,8 +157,8 @@ $this->load->view('shared/header', $data);
                 <?php } ?>
             </div>
             <div class="show-for-large large-4 columns" style="margin-right: 20px;">
-                <img src="<?= base_url() ?>assets/images/Crowdfunding-7601.gif" alt="picture of space" data-src="<?= base_url() ?>assets/images/Crowdfunding-7601.gif" style="height:250px !important">
-                <p class="subheader">Crowdfunding, new way for people to raise money, awareness and support for great ideas <br> Projects: <?=$project_count?> 
+                <img src="<?= base_url() ?>assets/images/Crowdfunding-7601.gif" alt="picture of space" data-src="<?= base_url() ?>assets/images/Crowdfunding-7601.gif" style="height:100px !important">Crowdfunding is an innovative way of raising money, awareness and support for new ideas. It turns the conventional way of getting large amounts of money from just a few donors around, by enabling lots of people (= a 'crowd') to each contribute a bit of money towards specific projects. This means, that no matter how big or small your wallet, you can support innovative ideas and help them become a reality.
+                <p class="subheader"> <br> Projects: <?=$project_count?> 
                 <br> Total Pledged: N$ <?=$total_pledged?> 
                 <br> Total Raised: N$ <?=$total_paid?> 
                 <br> Total Funders: <?=$funder_count?>

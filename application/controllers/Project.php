@@ -65,7 +65,11 @@ class Project extends CI_Controller {
         $data['projectId'] = $id;
         $data['project'] = $this->project_model->get_user_project($this->ion_auth->user()->row()->id);
 		$data['campaigns'] = $this->campaign_model->get_project_campaigns($id);
-        
+        $curr_camp = $this->campaign_model-> get_project_campaigns_current($id)->CampaignId;
+        $data['curr_camp'] = $this->campaign_model-> get_project_campaigns_current($id);
+       $data['total_pledge_amount'] = $this->campaign_model->get_all_pledges_unpaid($curr_camp)->Funds;
+       $data['total_pledge_paid'] = $this->campaign_model->get_all_pledges($curr_camp)->Funds;
+        $data['total_pledges'] = $this->pledge_model->count_camp_pledges($curr_camp);
         // Checking if user is logged in
         //if ($this->ion_auth->logged_in()) {
         $this->load->view("project/details", $data);
